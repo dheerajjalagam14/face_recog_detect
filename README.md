@@ -1,6 +1,4 @@
-# Face Detection using python and Dlib/Face_recognition
-
-__It contains 3 parts__
+# Face detection and recognition using python 
 
 ## 1. Gettings the data/Images from google image search
   A file name "**ImageDownload.py**" will donload the image from google and store it in you local hard drive in Current working directory
@@ -20,11 +18,7 @@ FacesDB :
 ---- Albert Einstein-- 5 images 
 
 ---- Nicola Tesla -- 5 images
-   
-all the images of people will be stored under FacesDB folder as shown here: (https://github.com/VaibhavKhamgaonkar/FaceDetection/blob/master/Screen%20Shot%202018-06-29%20at%202.56.38%20PM.png)
-* the next operation performed on the images is to crop the specific face area and replace the originial image. The command will take care of that thing as well. so finally you have al lthe face data created on your hard drive in working directory.
-
-
+ 
 ### Note: If you are tying to get more than 100 images then you need have **chrome driver** and you need to update the file at for chrome driver path( I have added mine ) you will have to change that. Just google it for chrome driver you will get it.
 
 ## 2. Training the Data
@@ -58,22 +52,9 @@ all the images of people will be stored under FacesDB folder as shown here: (htt
  
 * You can specify the multiple people in the argument whom you want to identify.
 
-*Here in this example I want to find  "Mesut Ozil',  "Jerome Boateng",  and "Manuel Neuer". check out how system responded to it. (results can be seen on this video : https://github.com/VaibhavKhamgaonkar/FaceDetection/blob/master/FindPerson.mp4)
-
-      python FindPerson.py --url 'https://youtu.be/t27OqUlCSOg' --find 'Mesut Ozil','Jerome Boateng','Manuel Neuer'
+python FindPerson.py --url 'https://youtu.be/t27OqUlCSOg' --find 'Mesut Ozil','Jerome Boateng','Manuel Neuer'
       
-      
-## 5 : Add unknown faces on the go:
-* Added functionality to handle Unknown faces and incorporate these unknown faces into system. 
-* This will now create the data set for unknown faces on the go for user to take action on whether they want to store the person information or discard it.
 
-The Demostrations of how it will work is shown here on below link
-
-**Part 1** : https://www.linkedin.com/feed/update/urn:li:activity:6418826482981920768
-
-**part 2** : https://lnkd.in/fjVkZx3
-
-=========================**ALL DONE** ===============================
 
 # Dependencies 
 
@@ -89,7 +70,7 @@ The Demostrations of how it will work is shown here on below link
 8. numpy
 9. shutil (for creatingcopying images between folders)
 
-===========xxxxxxxxxxxxxx=================
+
 
 
 
